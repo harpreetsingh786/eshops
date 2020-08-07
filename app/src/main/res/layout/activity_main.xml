@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/LogEmaileditText"
+
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="60dp"
+            android:textColorHint="#FFFFFF"
+            android:hint=" Email"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/LogpasswordeditText"
+            android:layout_below="@+id/LogEmaileditText"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="35dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="Password"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Logjoinbtn"
+            android:layout_below="@id/LogpasswordeditText"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textColor="#fff"
+            android:text="sign in" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
