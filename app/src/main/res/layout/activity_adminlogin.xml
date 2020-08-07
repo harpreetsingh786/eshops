@@ -8,6 +8,10 @@
     tools:context=".Adminlogin"
     android:background="@drawable/white">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
 
 
 
