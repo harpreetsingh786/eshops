@@ -38,12 +38,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="User Registration Form"
                 android:layout_marginLeft="100dp"
-                android:textColor="#000"
-                android:textStyle="bold"
                 android:layout_marginTop="30dp"
-                android:textSize="25dp"/>
+                android:text="User Registration Form"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="wrap_content"

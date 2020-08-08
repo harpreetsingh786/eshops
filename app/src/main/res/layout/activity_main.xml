@@ -42,18 +42,18 @@
             android:textColor="#FFFFFF"/>
 
         <Button
+            android:id="@+id/Logjoinbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Logjoinbtn"
             android:layout_below="@id/LogpasswordeditText"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginTop="40dp"
-            android:textSize="15dp"
             android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="70dp"
+            android:gravity="center"
+            android:text="sign in"
             android:textColor="#fff"
-            android:text="sign in" />
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>

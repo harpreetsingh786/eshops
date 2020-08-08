@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="About US:" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Our Team Memebers:" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/bhalwinder" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Hye, He is Bhalwinder Singh Dhillon." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/harpreet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Hye, he is Harpreet Singh." />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/grov" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Hye, he is Graov" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ranjit" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Hye, he is Ranjit Singh." />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/rupan" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="Hye, she is Rupinder Kaur." />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
