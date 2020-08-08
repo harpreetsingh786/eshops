@@ -73,20 +73,13 @@ public class NavigationActivitynewone extends AppCompatActivity {
                 DO();
                 Toast.makeText(this,"SigOut Sucessfully",Toast.LENGTH_SHORT);
                 return true;
-            case R.id.one:
-                done();
-            case R.id.onee:
         }
         return super.onOptionsItemSelected(item);
     }
-    public void done()
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
-    }
     public  void DO()
     {
-        finish();
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+
     }
 }

@@ -39,12 +39,18 @@
                 android:textColor="#ffffff"
                 android:textSize="30dp"
                 android:textStyle="bold" />
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="341dp"
+                android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/back" />
+                android:background="#000032"
+                android:text="More than 10k peopel like this appliciaction and they get offer on items on special ocessions. "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,6 +60,7 @@
                 android:shadowColor="#000032"
                 android:text="Our Team Memebers:"
                 android:textAlignment="center"
+                android:textColor="#000032"
                 android:textSize="15dp"
                 android:textStyle="bold" />
             <ImageView
@@ -68,7 +75,7 @@
                 android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Hye, He is Bhalwinder Singh Dhillon."
+                android:text="Bhalwinder Singh Dhillon."
                 android:textAlignment="center"
                 android:textColor="#000032"
                 android:textSize="15dp"
@@ -86,7 +93,7 @@
                 android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Harpreet Singh."
+                android:text="He is Harpreet Singh."
                 android:textAlignment="center"
                 android:textColor="#000032"
                 android:textSize="15dp"
@@ -103,7 +110,7 @@
                 android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Graov"
+                android:text="He is Graov"
                 android:textAlignment="center"
                 android:textColor="#000032"
                 android:textSize="15dp"
@@ -120,7 +127,7 @@
                 android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Ranjit Singh."
+                android:text="He is Ranjit Singh."
                 android:textAlignment="center"
                 android:textColor="#000032"
                 android:textSize="15dp"
@@ -131,15 +138,17 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/rupan" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Hye, she is Rupinder Kaur." />
+                android:text="she is Rupinder Kaur."
+                android:textAlignment="center"
+                android:textColor="#000032"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
 
 

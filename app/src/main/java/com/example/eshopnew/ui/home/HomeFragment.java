@@ -23,6 +23,7 @@ import com.example.eshopnew.R;
 public class HomeFragment extends Fragment {
     ViewFlipper viewFlipper;
     public Button btn;
+    public Button bt2;
 
     private HomeViewModel homeViewModel;
 
@@ -33,6 +34,14 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         btn=root.findViewById(R.id.button);
+        bt2=root.findViewById(R.id.button2);
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

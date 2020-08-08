@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000032"
+    android:background="#ffffff"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -25,10 +25,10 @@
         android:id="@+id/textView2"
         android:layout_width="395dp"
         android:layout_height="148dp"
-        android:background="#000032"
+        android:background="#ffffff"
         android:text="Best Deals on Mobile Phones and Laptops:"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#000032"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,12 +49,28 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="112dp"
+        android:layout_height="55dp"
+        android:background="#000032"
         android:text="Laptops"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="119dp"
+        android:layout_height="55dp"
+        android:background="#000032"
+        android:text="Mobilr Phones"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.836" />

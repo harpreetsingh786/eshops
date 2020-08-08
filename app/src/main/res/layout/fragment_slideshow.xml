@@ -80,19 +80,6 @@
 
         <EditText
 
-            android:id="@+id/passwordeditText"
-            android:inputType="textPassword"
-            android:layout_width="255dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="25dp"
-            android:textColorHint="#000"
-            android:drawableRight="@drawable/ic_baseline_lock_24"
-            android:hint=" Password"
-            android:textColor="#000"/>
-
-        <EditText
-
             android:id="@+id/confirmpasswordeditText"
             android:inputType="textPassword"
             android:layout_width="255dp"
