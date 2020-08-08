@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/prodesc"
-            android:text="This is a description of the product This is a description of the product This is a description of the product This is a description of the product This is a description of the product"
+            android:text="This is  description of the product This is a description of the product This is a description of the product This is a description of the product This is a description of the product"
             android:layout_below="@id/Categoryname"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"

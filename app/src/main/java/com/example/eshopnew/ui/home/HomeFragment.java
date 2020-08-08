@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.eshopnew.R;
 
 public class HomeFragment extends Fragment {
+    ViewFlipper viewFlipper;
 
     private HomeViewModel homeViewModel;
 
@@ -27,4 +30,4 @@ public class HomeFragment extends Fragment {
 
         return root;
     }
-}
+  }

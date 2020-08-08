@@ -6,15 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Splash">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="241dp"
-        android:layout_height="524dp"
+
+    <TextView
+        android:layout_width="359dp"
+        android:layout_height="74dp"
+        android:background="#ffffff"
+        android:text="Electronic Shop"
+        android:textAlignment="center"
+        android:textColor="#000032"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.228" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="280dp"
+        android:layout_height="437dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        app:srcCompat="@drawable/goooog" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

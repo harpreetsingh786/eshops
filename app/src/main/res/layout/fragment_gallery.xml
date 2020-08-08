@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,45 +27,52 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="10">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="About US:" />
+                android:background="#000032"
+                android:text="About US:"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="341dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/back" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Our Team Memebers:" />
+                android:shadowColor="#000032"
+                android:text="Our Team Memebers:"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="341dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/bhalwinder" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Hye, He is Bhalwinder Singh Dhillon." />
+                android:text="Hye, He is Bhalwinder Singh Dhillon."
+                android:textAlignment="center"
+                android:textColor="#000032"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -73,45 +80,51 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/harpreet" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Harpreet Singh." />
+                android:text="Hye, he is Harpreet Singh."
+                android:textAlignment="center"
+                android:textColor="#000032"
+                android:textSize="15dp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="341dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/grov" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Graov" />
+                android:text="Hye, he is Graov"
+                android:textAlignment="center"
+                android:textColor="#000032"
+                android:textSize="15dp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="341dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/ranjit" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Hye, he is Ranjit Singh." />
+                android:text="Hye, he is Ranjit Singh."
+                android:textAlignment="center"
+                android:textColor="#000032"
+                android:textSize="15dp"
+                android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="341dp"

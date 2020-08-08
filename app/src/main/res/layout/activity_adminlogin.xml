@@ -36,20 +36,14 @@
             android:id="@+id/loginTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textStyle="bold"
-            android:textSize="30dp"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="105dp"
-
-
+            android:text="Login"
             android:textColor="#000"
-            android:layout_marginLeft="160dp"/>
 
 
-
-
-
-
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

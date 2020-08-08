@@ -75,9 +75,7 @@ public class NavigationActivitynewone extends AppCompatActivity {
                 return true;
             case R.id.one:
                 done();
-                Toast.makeText(this,"LogOut",Toast.LENGTH_SHORT);
             case R.id.onee:
-                Toast.makeText(this,"LogOut",Toast.LENGTH_SHORT);
         }
         return super.onOptionsItemSelected(item);
     }

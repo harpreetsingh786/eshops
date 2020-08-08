@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.back:
                 DOo();
-                Toast.makeText(this,"SigOut Sucessfully",Toast.LENGTH_SHORT);
                 return true;
         }
         return super.onOptionsItemSelected(item);

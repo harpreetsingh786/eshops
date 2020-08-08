@@ -38,7 +38,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
             android:text="Contact Us:"
-            android:textColor="#000"
+            android:textColor="#000032"
             android:textSize="25dp" />
 
 
@@ -116,6 +116,7 @@
                 android:layout_marginTop="20dp"
 
                 android:layout_marginRight="65dp"
+                android:background="#000032"
                 android:drawablePadding="10dp"
                 android:text="Submit"
                 android:textColor="#ffffff" />
@@ -140,15 +141,16 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
             android:text="Our Store:"
-            android:textColor="#000"
+            android:textColor="#000032"
             android:textSize="25dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
             android:text="8530 Jean Brillon Lasalle Quebec"
-            android:textColor="#000"
+            android:textColor="#000032"
             android:textSize="15dp" />
 
         <TextView
@@ -157,7 +159,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
             android:text="Opening Hours:"
-            android:textColor="#000"
+            android:textColor="#000032"
             android:textSize="25dp" />
         <TextView
             android:layout_width="wrap_content"

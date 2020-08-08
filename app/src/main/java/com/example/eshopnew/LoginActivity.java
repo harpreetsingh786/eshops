@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
                                         startActivity(new Intent(getApplicationContext(), NavigationActivitynewone.class));
                                     }
                                     else {
-                                        Toast.makeText(LoginActivity.this,"please verified your email address", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(LoginActivity.this,"please verify your email address", Toast.LENGTH_SHORT).show();
 
                                     }
                                 } else {
