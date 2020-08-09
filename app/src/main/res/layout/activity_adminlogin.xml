@@ -8,12 +8,6 @@
     tools:context=".Adminlogin"
     android:background="@drawable/white">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="abcdd"
-    />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +19,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@drawable/ic_wave"></LinearLayout>
+        android:background="@drawable/ic_wave2"></LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

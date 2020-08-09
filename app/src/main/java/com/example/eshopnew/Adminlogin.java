@@ -1,5 +1,6 @@
 package com.example.eshopnew;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,11 +34,11 @@ public class Adminlogin extends AppCompatActivity {
                 if (AdminEmailIdediText.getText().toString().equals("admin")&&AdminpasswordediText.getText().toString().equals("admin"))
 
                 {
-                   // Intent intent=new Intent(Adminlogin.this,AdminWelcomeActivity.class);
-                    //startActivity(intent);
+                    Intent intent=new Intent(Adminlogin.this,adminwelcomeactivity.class);
+                    startActivity(intent);
                 }
                 else {
-                    Toast.makeText(Adminlogin.this,"Login  Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Adminlogin.this,"Login Failed", Toast.LENGTH_SHORT).show();
 
                 }
             }

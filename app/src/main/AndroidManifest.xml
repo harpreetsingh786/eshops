@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".formofdetails"></activity>
+        <activity android:name=".watches"></activity>
+        <activity android:name=".mobiles" />
+        <activity android:name=".laptops" />
+        <activity android:name=".adminwelcomeactivity" />
+        <activity android:name=".formofdetails" />
         <activity
             android:name=".NavigationActivitynewone"
             android:label="@string/title_activity_navigation_activitynewone"

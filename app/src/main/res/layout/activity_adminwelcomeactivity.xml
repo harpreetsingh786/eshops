@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Adminlogin"
+    android:background="@drawable/white">
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#0099ff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="20dp"
+android:background="@drawable/ic_wave2"></LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Add laptops"
+        android:id="@+id/laptop"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Add Mobiles"
+        android:id="@+id/mobile"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Add watches"
+        android:id="@+id/watches"/>
+
+
+</LinearLayout>

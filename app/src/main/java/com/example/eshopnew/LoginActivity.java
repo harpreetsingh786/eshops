@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
 
         registrationTextVIEW.setPaintFlags(registrationTextVIEW.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-
+admin.setPaintFlags(admin.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         joinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
