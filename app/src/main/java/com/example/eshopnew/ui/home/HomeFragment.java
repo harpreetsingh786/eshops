@@ -29,10 +29,26 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+
+        viewFlipper=root.findViewById(R.id.VFLIPPER);
+
+        int images []={R.drawable.laptopspics,R.drawable.deals,R.drawable.smartwatchesimages,R.drawable.pixel};
+
+        for (int i=0;i<images.length;i++)
+        {
+            imagesFlipper(images[i]);
+
+        }
+
+
+
+
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
+        //final TextView textView = root.findViewById(R.id.text_home);
         btn=root.findViewById(R.id.button);
         bt2=root.findViewById(R.id.button2);
         bt2.setOnClickListener(new View.OnClickListener() {
@@ -51,4 +67,19 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
-  }
+
+    public  void imagesFlipper(int image)
+    {
+        ImageView imageView=new ImageView(getActivity());
+        imageView.setBackgroundResource(image);
+
+        viewFlipper.addView(imageView);
+        viewFlipper.setFlipInterval(4000);
+        viewFlipper.setAutoStart(true);
+
+        viewFlipper.setInAnimation(getActivity(),android.R.anim.slide_in_left);
+        viewFlipper.setOutAnimation(getActivity(),android.R.anim.slide_out_right);
+
+    }
+
+}
