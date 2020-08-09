@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listofproduct">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hplaptop"
+        android:id="@+id/laptopimage"
+        android:layout_marginLeft="100dp">
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HP laptop"
+        android:id="@+id/laptopname"
+        android:layout_below="@id/laptopimage"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take your productivity anywhere with the HP laptop. This 15.6 machine features a sleek and portable design with a micro-edge bezel and precision touchpad. It comes with a 1.3GHz Intel quad-core processor, 8GB of RAM, a 512GB solid state drive, and a long-life battery to give you the power you need to get everything done."
+        android:id="@+id/laptopdesc"
+        android:layout_below="@id/laptopname"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAD 989"
+        android:id="@+id/laptoprice"
+        android:layout_below="@id/laptopdesc"
+        android:textSize="30dp"
+        android:gravity="right"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-black"
+        android:paddingRight="25dp">
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/laptopbuy"
+        android:layout_below="@id/laptoprice"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="25dp"
+        android:background="#000"
+        android:text="Buy">
+
+    </Button>
+</RelativeLayout>
