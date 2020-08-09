@@ -20,28 +20,29 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#EEEEEE">
+                android:background="#000032">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:orientation="vertical"
-                    android:background="#000">
+                    android:background="#000"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="150dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/blackmobile"/>
+                        android:background="@drawable/blackmobile" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobiles"
                         android:layout_gravity="center"
-                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Mobiles"
                         android:textColor="#ffff"
                         android:textSize="18sp"
-                        android:layout_marginTop="5dp"/>
-
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -49,52 +50,48 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="190dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="235dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/androidcardview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            android:id="@+id/androidcardview"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                >
+                                android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/androidicon"
                                     android:layout_width="150dp"
                                     android:layout_height="150dp"
-                                    android:src="@drawable/androidlogo"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/androidicon"/>
+                                    android:src="@drawable/androidlogo" />
 
 
                                 <Button
+                                    android:id="@+id/androidibutton"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/androidibutton"
-                                    android:background="@android:color/transparent"/>
-
-
-
+                                    android:background="@android:color/transparent" />
 
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
-
 
 
                     </LinearLayout>
@@ -102,45 +99,39 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="235dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                >
+                                android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/iosicon"
                                     android:layout_width="200dp"
                                     android:layout_height="150dp"
-                                    android:src="@drawable/ios"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/iosicon"/>
+                                    android:src="@drawable/ios" />
 
 
                                 <Button
+                                    android:id="@+id/buttonIos"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonIos"
-                                    android:background="@android:color/transparent"/>
-
-
-
+                                    android:background="@android:color/transparent" />
 
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
-
-
 
 
                     </LinearLayout>
