@@ -71,7 +71,7 @@ public class NavigationActivitynewone extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.action_settings:
                 DO();
-                Toast.makeText(this,"SigOut Sucessfully",Toast.LENGTH_SHORT);
+                Toast.makeText(this,"Signout Sucessfully",Toast.LENGTH_SHORT);
                 return true;
         }
         return super.onOptionsItemSelected(item);

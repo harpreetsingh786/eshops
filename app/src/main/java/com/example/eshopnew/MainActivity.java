@@ -32,20 +32,14 @@ public class MainActivity extends AppCompatActivity {
         product=new ArrayList<ProdListData>();
 
 
-        product.add(new ProdListData("The MacBook is a line of Macintosh laptop computers designed by Apple. The MacBook line consists of the original MacBook (2006-present), the MacBook Pro (2006-present), and the MacBook Air (2008-present). The MacBook lineup came from the merging of the PowerBook and iBook lines as Apple transitioned over to using Intel instead of PowerPC processors.","Macbooks",R.drawable.macbook));
-        product.add(new ProdListData("A gaming computer, also known as a gaming PC or gaming rig, is a personal computer designed for playing video games that require a high amount of computing power.","Gaming Laptops",R.drawable.gaming));
-        product.add(new ProdListData("Chromebooks are lightweight laptops that heavily depend on Google Chrome. While you have OS-specific features like a file manager, app launcher, taskbar, and so on, most of your work and play resides within a Chrome tab.","Chrome Laptops",R.drawable.chrome));
+        product.add(new ProdListData("Laptops",R.drawable.macbook));
+        product.add(new ProdListData("Mobiles",R.drawable.gaming));
+        product.add(new ProdListData("Smart Watches",R.drawable.chrome));
 
         ProdListAdapter adapter=new ProdListAdapter(getApplicationContext(),product);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-       /* bt1=findViewById(R.id.Logjoinbtn);
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });*/
     }
 
     @Override

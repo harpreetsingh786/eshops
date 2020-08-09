@@ -88,7 +88,7 @@ admin.setPaintFlags(admin.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
                 if (password.length()<6)
                 {
-                    Toast.makeText(LoginActivity.this,"PASWORD IS TOO SHORT", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this,"PASSWORD IS TOO SHORT", Toast.LENGTH_SHORT).show();
                 }
 
                 firebaseAuth=FirebaseAuth.getInstance();

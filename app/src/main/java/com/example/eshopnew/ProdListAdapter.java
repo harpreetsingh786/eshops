@@ -2,6 +2,7 @@ package com.example.eshopnew;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,13 +41,22 @@ public class ProdListAdapter extends
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        ProdListData prod=product.get(position);
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+        final ProdListData prod=product.get(position);
        // holder.imageView6.
 
+     //   holder.Categoryname.setText(prod.getProdcategoryname());
         holder.Categoryname.setText(prod.getProdcategoryname());
-        holder.prodesc.setText(prod.getProdcategorydescription());
         holder.imageView6.setImageResource(prod.getImgId());
+        holder.imageView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(ctx,LOPRecyclerView.class);
+                in.putExtra("itms",prod.getProdcategoryname());
+                in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                ctx.startActivity(in);
+            }
+        });
 
     }
 
@@ -63,7 +73,7 @@ public class ProdListAdapter extends
             super(itemView);
             imageView6=(ImageView) itemView.findViewById(R.id.imageView6);
             Categoryname=(TextView) itemView.findViewById(R.id.Categoryname);
-            prodesc=(TextView) itemView.findViewById(R.id.prodesc);
+        //    prodesc=(TextView) itemView.findViewById(R.id.prodesc);
         }
     }
 }
