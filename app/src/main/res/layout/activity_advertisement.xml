@@ -26,7 +26,7 @@
         android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Card Holder's Name"
+        android:hint="Card Holder's Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         android:layout_width="82dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="jan"
+        android:hint="MM"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         android:layout_width="84dp"
         android:layout_height="40dp"
         android:ems="10"
-        android:hint="2020"
+        android:hint="YYYY"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,16 +114,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.953" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="294dp"
-        android:layout_height="40dp"
-        android:text="Save Credit Card Information"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
