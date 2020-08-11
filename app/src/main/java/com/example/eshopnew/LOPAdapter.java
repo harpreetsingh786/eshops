@@ -1,9 +1,11 @@
 package com.example.eshopnew;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,9 +22,15 @@ public class LOPAdapter extends
         TextView myTitle, myDesc;
         Context ctx;
         ArrayList<LOPpojo> product = new ArrayList<>();
+        Button button;
+
+
         public LOPAdapter(Context ctx, ArrayList < LOPpojo > product) {
         this.ctx = ctx;
         this.product = product;
+
+
+
 
     }
 
@@ -49,6 +57,14 @@ public class LOPAdapter extends
        holder.Categoryname.setText(prod.getProdcategoryname());
         holder.prodesc.setText(prod.getProdcategorydescription());
         holder.imageView6.setImageResource(prod.getImgId());
+        holder.imageView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(ctx,Listofproduct.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                ctx.startActivity(i);
+            }
+        });
 
     }
 
