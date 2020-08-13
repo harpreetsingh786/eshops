@@ -23,21 +23,24 @@
         android:textColor="#000"
         android:fontFamily="sans-serif-black">
     </TextView>
+
     <TextView
+        android:id="@+id/laptopdesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Take your productivity anywhere with the HP laptop. This 15.6 machine features a sleek and portable design with a micro-edge bezel and precision touchpad. It comes with a 1.3GHz Intel quad-core processor, 8GB of RAM, a 512GB solid state drive, and a long-life battery to give you the power you need to get everything done."
-        android:id="@+id/laptopdesc"
         android:layout_below="@id/laptopname"
-        android:textSize="18dp"
-        android:gravity="center"
-        android:textColor="#000"
+        android:layout_marginTop="21dp"
         android:fontFamily="sans-serif"
+        android:gravity="center"
         android:paddingLeft="15dp"
+        android:paddingTop="10dp"
         android:paddingRight="15dp"
-        android:paddingTop="10dp">
+        android:text="Take your productivity anywhere with the HP laptop. This 15.6 machine features a sleek and portable design with a micro-edge bezel and precision touchpad. It comes with a 1.3GHz Intel quad-core processor, 8GB of RAM, a 512GB solid state drive, and a long-life battery to give you the power you need to get everything done."
+        android:textColor="#000"
+        android:textSize="18dp">
 
     </TextView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

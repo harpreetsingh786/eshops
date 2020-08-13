@@ -55,11 +55,10 @@
         android:orientation="horizontal">
 
 
-
         <Button
             android:id="@+id/btnInsert"
-            android:layout_width="194dp"
-            android:layout_height="61dp"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="5dp"
             android:text="Upload"

@@ -71,7 +71,7 @@ public class laptops extends AppCompatActivity {
                 getValues();
                 ref.child(String.valueOf(maxid+1)).setValue(profile);
 
-                Toast.makeText(laptops.this,"Data Inserted..",Toast.LENGTH_SHORT).show();
+                Toast.makeText(laptops.this,"Data is Inserted..",Toast.LENGTH_SHORT).show();
             }
         });
 

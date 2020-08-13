@@ -38,7 +38,7 @@ public class Adminlogin extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(Adminlogin.this,"Login Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Adminlogin.this,"Login  is Failed", Toast.LENGTH_SHORT).show();
 
                 }
             }
