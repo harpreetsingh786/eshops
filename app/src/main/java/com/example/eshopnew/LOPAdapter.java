@@ -21,16 +21,13 @@ public class LOPAdapter extends
         ImageView myImg;
         TextView myTitle, myDesc;
         Context ctx;
-        ArrayList<LOPpojo> product = new ArrayList<>();
+        ArrayList<Profile> product = new ArrayList<>();
         Button button;
 
 
-        public LOPAdapter(Context ctx, ArrayList < LOPpojo > product) {
+        public LOPAdapter(Context ctx, ArrayList < Profile > product) {
         this.ctx = ctx;
         this.product = product;
-
-
-
 
     }
 
@@ -42,7 +39,7 @@ public class LOPAdapter extends
             LayoutInflater inflater = LayoutInflater.from(context);
 
             // Inflate the custom layout
-            View contactView = inflater.inflate(R.layout.productlayout, parent, false);
+            View contactView = inflater.inflate(R.layout.activity_listofproduct, parent, false);
 
             // Return a new holder instance
             ViewHolder viewHolder = new ViewHolder(contactView);
@@ -51,12 +48,14 @@ public class LOPAdapter extends
 
         @Override
         public void onBindViewHolder (@NonNull ViewHolder holder,int position){
-            LOPpojo prod = product.get(position);
+            Profile prod = product.get(position);
         // holder.imageView6.
 
-       holder.Categoryname.setText(prod.getProdcategoryname());
-        holder.prodesc.setText(prod.getProdcategorydescription());
-        holder.imageView6.setImageResource(prod.getImgId());
+       holder.laptopname.setText(prod.getName());
+        holder.laptopdesc.setText(prod.getDescription());
+        holder.laptoprice.setText(prod.getPrice());
+        //holder.laptopimage.setImageResource();
+       /* holder.imageView6.setImageResource(prod.getImageAdress());
         holder.imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +64,7 @@ public class LOPAdapter extends
                 ctx.startActivity(i);
             }
         });
-
+*/
     }
 
         @Override
@@ -74,15 +73,17 @@ public class LOPAdapter extends
     }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
-            ImageView imageView6;
-            TextView Categoryname;
-            TextView prodesc;
+            ImageView laptopimage;
+            TextView laptopname;
+            TextView laptopdesc;
+            TextView laptoprice;
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
-                imageView6 = (ImageView) itemView.findViewById(R.id.imageView6);
-                Categoryname = (TextView) itemView.findViewById(R.id.Categoryname);
-                prodesc = (TextView) itemView.findViewById(R.id.prodesc);
+                laptopimage = (ImageView) itemView.findViewById(R.id.laptopimage);
+                laptopname = (TextView) itemView.findViewById(R.id.laptopname);
+                laptopdesc = (TextView) itemView.findViewById(R.id.laptopdesc);
+                laptoprice=(TextView)itemView.findViewById(R.id.laptoprice);
             }
         }
     }

@@ -51,8 +51,16 @@ public class ProdListAdapter extends
         holder.imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String name="";
+                if(prod.getProdcategoryname().equals("Laptops")){
+                    name="Profile";
+                }else   if(prod.getProdcategoryname().equals("Mobiles")){
+                    name="Profilemobile";
+                }else{
+                    name="Profilewatches";
+                }
                 Intent in=new Intent(ctx,LOPRecyclerView.class);
-                in.putExtra("itms",prod.getProdcategoryname());
+                in.putExtra("itms",name);
                 in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(in);
             }
