@@ -2,6 +2,7 @@ package com.example.eshopnew;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 
@@ -47,24 +53,35 @@ public class LOPAdapter extends
         }
 
         @Override
-        public void onBindViewHolder (@NonNull ViewHolder holder,int position){
+        public void onBindViewHolder (@NonNull final ViewHolder holder, int position){
             Profile prod = product.get(position);
         // holder.imageView6.
 
        holder.laptopname.setText(prod.getName());
         holder.laptopdesc.setText(prod.getDescription());
         holder.laptoprice.setText(prod.getPrice());
-        //holder.laptopimage.setImageResource();
-       /* holder.imageView6.setImageResource(prod.getImageAdress());
-        holder.imageView6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(ctx,Listofproduct.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                ctx.startActivity(i);
-            }
-        });
-*/
+
+            FirebaseStorage firebaseStorage= FirebaseStorage.getInstance();
+            StorageReference str=firebaseStorage.getReferenceFromUrl(prod.getImageAdress());
+            str.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri uri) {
+
+                    Glide.with(ctx)
+                            .load(uri.toString())
+                            .into(holder.laptopimage);
+                }
+            });
+
+            holder.laptopbuy.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent in =new Intent(ctx,Advertisement.class);
+                    in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    ctx.startActivity(in);
+                }
+            });
+
     }
 
         @Override
@@ -77,6 +94,7 @@ public class LOPAdapter extends
             TextView laptopname;
             TextView laptopdesc;
             TextView laptoprice;
+            Button  laptopbuy;
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -84,6 +102,7 @@ public class LOPAdapter extends
                 laptopname = (TextView) itemView.findViewById(R.id.laptopname);
                 laptopdesc = (TextView) itemView.findViewById(R.id.laptopdesc);
                 laptoprice=(TextView)itemView.findViewById(R.id.laptoprice);
+                laptopbuy=(Button) itemView.findViewById(R.id.laptopbuy);
             }
         }
     }
