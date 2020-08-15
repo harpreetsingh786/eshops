@@ -93,12 +93,13 @@
         android:layout_width="297dp"
         android:layout_height="69dp"
         android:background="#2196F3"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829"
+        app:layout_constraintVertical_bias="0.761"
         tools:text="Next Step" />
 
     <Button
@@ -112,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.91" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
