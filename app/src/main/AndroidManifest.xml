@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".formofdetails"></activity>
-        <activity android:name=".adminwelcomeactivity"></activity>
-        <activity android:name=".laptops"></activity>
-        <activity android:name=".mobiles"></activity>
-        <activity android:name=".watches"></activity>
-        <activity android:name=".LOPRecyclerView"></activity>
-        <activity android:name=".Listofproduct"></activity>
-        <activity android:name=".ProdCatRecyclerview"></activity>
-        <activity android:name=".Advertisement"></activity>
+        <activity android:name=".bookingpage"></activity>
+        <activity android:name=".formofdetails" />
+        <activity android:name=".adminwelcomeactivity" />
+        <activity android:name=".laptops" />
+        <activity android:name=".mobiles" />
+        <activity android:name=".watches" />
+        <activity android:name=".LOPRecyclerView" />
+        <activity android:name=".Listofproduct" />
+        <activity android:name=".ProdCatRecyclerview" />
+        <activity android:name=".Advertisement" />
         <activity
             android:name=".NavigationActivitynewone"
             android:label="@string/title_activity_navigation_activitynewone"

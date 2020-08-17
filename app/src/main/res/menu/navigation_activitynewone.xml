@@ -6,17 +6,5 @@
         android:orderInCategory="100"
         android:title="Sign Out"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/Sale"
-        android:orderInCategory="100"
-        android:title="Check Items for Sale"
-        app:showAsAction="ifRoom">
-        <menu>
-            <item android:id="@+id/one"
-                android:title="Laptops"/>
-            <item android:id="@+id/onee"
-                android:title="Mobile Phones"/>
-        </menu>
-    </item>
-
+   
 </menu>
