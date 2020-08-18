@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgrounddone22"
     tools:context=".Listofproduct">
+
     <ImageView
+        android:id="@+id/laptopimage"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:src="@drawable/hplaptop"
-        android:id="@+id/laptopimage"
-        android:layout_marginLeft="100dp">
-    </ImageView>
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/hplaptop"></ImageView>
+
     <TextView
+        android:id="@+id/laptopname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HP laptop"
-        android:id="@+id/laptopname"
         android:layout_below="@id/laptopimage"
-        android:textSize="30dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
+        android:text="HP laptop"
         android:textColor="#000"
-        android:fontFamily="sans-serif-black">
-    </TextView>
+        android:textSize="30dp"></TextView>
 
     <TextView
         android:id="@+id/laptopdesc"
@@ -42,29 +43,29 @@
     </TextView>
 
     <TextView
+        android:id="@+id/laptoprice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CAD 989"
-        android:id="@+id/laptoprice"
         android:layout_below="@id/laptopdesc"
-        android:textSize="30dp"
-        android:gravity="right"
-        android:textColor="#000"
         android:fontFamily="sans-serif-black"
-        android:paddingRight="25dp">
-    </TextView>
+        android:gravity="right"
+        android:paddingRight="25dp"
+        android:text="CAD 989"
+        android:textColor="#000"
+        android:textSize="30dp"></TextView>
+
     <Button
+        android:id="@+id/laptopbuy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/laptopbuy"
         android:layout_below="@id/laptoprice"
-        android:gravity="center"
-        android:textColor="#FFF"
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
-        android:padding="25dp"
         android:background="#000"
-        android:text="Buy">
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Buy"
+        android:textColor="#FFF">
 
     </Button>
 </RelativeLayout>

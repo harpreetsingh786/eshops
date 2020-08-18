@@ -22,149 +22,152 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/regstrationLayout"
-
-        android:orientation="vertical"
-        android:visibility="visible"
         >
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="Contact Us:"
-            android:textColor="#000032"
-            android:textSize="25dp" />
-
-
-        <EditText
-            android:id="@+id/firsteditText"
-            android:layout_width="255dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="25dp"
-            android:textColorHint="#000"
-            android:textColor="#000"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
-            android:hint="First Name"/>
-
-
-        <EditText
-            android:id="@+id/lasteditText"
-            android:layout_width="255dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="25dp"
-            android:textColorHint="#000"
-            android:textColor="#000"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
-            android:hint="Last Name"/>
-
-        <EditText
-            android:id="@+id/EmaileditText"
-            android:inputType="textEmailAddress"
-            android:layout_width="255dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="25dp"
-            android:textColorHint="#000"
-            android:hint=" Email Id"
-            android:textColor="#000"/>
-
-        <EditText
-
-            android:id="@+id/confirmpasswordeditText"
-            android:inputType="textPassword"
-            android:layout_width="255dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="25dp"
-            android:textColorHint="#000"
-            android:hint="Write a Message:"
-            android:textColor="#000"/>
-
         <LinearLayout
+            android:id="@+id/regstrationLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
 
-            <Button
-                android:id="@+id/joinbtn"
+            android:background="@drawable/backgrounddone22"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Contact Us:"
+                android:textColor="#000032"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/firsteditText"
+                android:layout_width="255dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="First Name"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+
+            <EditText
+                android:id="@+id/lasteditText"
+                android:layout_width="255dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="Last Name"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/EmaileditText"
+                android:layout_width="255dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="25dp"
+                android:hint=" Email Id"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <EditText
+
+                android:id="@+id/confirmpasswordeditText"
+                android:layout_width="255dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="25dp"
+                android:hint="Write a Message:"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/joinbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginRight="65dp"
+                    android:background="#000032"
+                    android:drawablePadding="10dp"
+                    android:text="Submit"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
                 android:layout_marginTop="20dp"
-
-                android:layout_marginRight="65dp"
-                android:background="#000032"
-                android:drawablePadding="10dp"
-                android:text="Submit"
-                android:textColor="#ffffff" />
+                android:orientation="horizontal">
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Our Store:"
+                android:textColor="#000032"
+                android:textSize="25dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="8530 Jean Brillon Lasalle Quebec"
+                android:textColor="#000032"
+                android:textSize="15dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Opening Hours:"
+                android:textColor="#000032"
+                android:textSize="25dp" />
 
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="Our Store:"
-            android:textColor="#000032"
-            android:textSize="25dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="8530 Jean Brillon Lasalle Quebec"
-            android:textColor="#000032"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="Opening Hours:"
-            android:textColor="#000032"
-            android:textSize="25dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="Mon - Fri: 7am - 10pm
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Mon - Fri: 7am - 10pm
                                              Sat-Sun: 10am-5pm"
-            android:textColor="#000"
-            android:textSize="15dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text=""
-            android:textColor="#000"
-            android:textSize="15dp" />
-    </LinearLayout>
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

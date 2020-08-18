@@ -39,18 +39,19 @@
 
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/loginLayout"
+        android:background="@drawable/backgrounddone22"
 
-        >
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LogEmaileditText_textInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/LogEmaileditText_textInput"
             android:focusable="true"
             android:focusableInTouchMode="true">
 
@@ -74,14 +75,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            app:passwordToggleEnabled="true"
-            >
+            app:passwordToggleEnabled="true">
 
             <EditText
                 android:id="@+id/LogpasswordeditText"

@@ -24,15 +24,14 @@
         android:layout_height="wrap_content">
 
 
-
         <LinearLayout
+            android:id="@+id/regstrationLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/regstrationLayout"
 
+            android:background="@drawable/backgrounddone22"
             android:orientation="vertical"
-            android:visibility="visible"
-            >
+            android:visibility="visible">
 
 
             <TextView
@@ -46,9 +45,9 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/LogEmaileditText_textInput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LogEmaileditText_textInput"
                 android:focusable="true"
                 android:focusableInTouchMode="true">
 
@@ -154,6 +153,7 @@
                     android:textColorHint="#000"
                     android:textColorLink="#000032" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -177,22 +177,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginLeft="90dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#000032"
                     android:text="A;ready have an Aaccount? "
-                    android:textColor="#000032" />
+                    android:textColor="#ffffff" />
 
                 <TextView
                     android:id="@+id/sinin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#000032"
                     android:text="Sign In"
-                    android:textColor="#000032"
+                    android:textColor="#ffffff"
                     android:textStyle="bold" />
 
             </LinearLayout>

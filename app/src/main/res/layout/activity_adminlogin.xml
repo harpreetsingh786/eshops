@@ -41,18 +41,19 @@
 
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/loginLayout"
+        android:background="@drawable/backgrounddone22"
 
-        >
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LogEmaileditText_textInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/LogEmaileditText_textInput"
             android:focusable="true"
             android:focusableInTouchMode="true">
 
@@ -63,18 +64,17 @@
                 android:layout_height="61dp"
                 android:layout_marginLeft="95dp"
                 android:layout_marginTop="35dp"
-                android:textColorHint="#000"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="10dp"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:drawableRight="@drawable/ic_baseline_person_outline_24"
 
-                android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:drawablePadding="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000"
 
-                android:textColor="#000"/>
+                android:textColorHint="#000" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -82,25 +82,24 @@
             android:layout_height="wrap_content"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            app:passwordToggleEnabled="true"
-            >
+            app:passwordToggleEnabled="true">
 
             <EditText
                 android:id="@+id/LogpasswordeditText"
-                android:inputType="textPassword"
-
                 android:layout_width="255dp"
+
                 android:layout_height="61dp"
                 android:layout_marginLeft="95dp"
                 android:layout_marginTop="35dp"
-                android:textColorHint="#ffffff"
-                android:hint="Password"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
 
                 android:paddingLeft="10dp"
-                android:drawablePadding="10dp"
+                android:textColor="#000"
 
-                android:textColor="#000"/>
+                android:textColorHint="#ffffff" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
