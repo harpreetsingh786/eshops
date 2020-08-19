@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".CreditFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:text="Card Details"
+            android:textSize="26dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/txt"
+            android:hint="Card Number"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/cardname"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/cardnumber"
+            android:hint="Name On Card"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:inputType="textPersonName" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:id="@+id/expdate"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/cardname"
+            android:inputType="date"
+            android:hint="Expiry Date"/>
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/expdate"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/expdate"
+            android:hint="CVV"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_below="@id/cvv"
+            android:text="Your CVV is the last 3 digits in signature strip on back of your card"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+        <Button
+            android:id="@+id/submitcreditbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/text2"/>
+
+    </RelativeLayout>
+</RelativeLayout>

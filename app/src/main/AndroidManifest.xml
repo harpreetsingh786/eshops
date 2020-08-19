@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bookingpage"></activity>
+        <activity android:name=".creditFragment"></activity>
+        <activity android:name=".bookingpage" />
         <activity android:name=".formofdetails" />
         <activity android:name=".adminwelcomeactivity" />
         <activity android:name=".laptops" />
