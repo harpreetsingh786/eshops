@@ -21,8 +21,9 @@
         android:focusable="true"
         android:focusableInTouchMode="true">
 
-        <EditText
-            android:id="@+id/firstname"
+
+
+        <EditText android:id="@+id/firstname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
@@ -70,10 +71,11 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:hint="EMAIL"
+            android:hint="ADDRESS"
             android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt3"
@@ -103,7 +105,17 @@
         android:layout_below="@id/txt3"
         android:layout_marginTop="30dp"
         android:focusable="true"
-        android:focusableInTouchMode="true" />
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/phonenumberd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="GMAIL" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -113,7 +125,9 @@
         android:layout_below="@+id/txt4"
         android:layout_marginTop="30dp"
         android:focusable="true"
-        android:focusableInTouchMode="true" />
+        android:focusableInTouchMode="true" >
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
@@ -124,7 +138,34 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
-        android:text="Submit" />
+        android:text="Pay" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt5f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_marginTop="30dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/firstnamef"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="                          Fill Details:" />
 
 </RelativeLayout>
 
