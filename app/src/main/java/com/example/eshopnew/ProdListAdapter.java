@@ -43,20 +43,20 @@ public class ProdListAdapter extends
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         final ProdListData prod=product.get(position);
+       // holder.imageView6.
 
+     //   holder.Categoryname.setText(prod.getProdcategoryname());
         holder.Categoryname.setText(prod.getProdcategoryname());
         holder.imageView6.setImageResource(prod.getImgId());
         holder.imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 String name="";
                 if(prod.getProdcategoryname().equals("Laptops")){
                     name="Profile";
                 }else   if(prod.getProdcategoryname().equals("Mobiles")){
-                    name="profilemobile";
-                }else if(prod.getProdcategoryname().equals("watches")){
+                    name="Profilemobile";
+                }else{
                     name="Profilewatches";
                 }
                 Intent in=new Intent(ctx,LOPRecyclerView.class);
@@ -81,6 +81,7 @@ public class ProdListAdapter extends
             super(itemView);
             imageView6=(ImageView) itemView.findViewById(R.id.imageView6);
             Categoryname=(TextView) itemView.findViewById(R.id.Categoryname);
+        //    prodesc=(TextView) itemView.findViewById(R.id.prodesc);
         }
     }
 }

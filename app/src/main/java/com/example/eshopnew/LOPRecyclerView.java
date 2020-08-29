@@ -15,7 +15,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -24,14 +23,13 @@ public class LOPRecyclerView extends AppCompatActivity {
     RecyclerView recyclerView;
     DatabaseReference reff;
     LOPAdapter lopAdapter;
-    FirebaseFirestore db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_p_recycler_view);
 
-        db = FirebaseFirestore.getInstance();
         Intent in = getIntent();
         String val = in.getStringExtra("itms");
 
@@ -39,7 +37,6 @@ public class LOPRecyclerView extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         final ArrayList<Profile> prodlist = new ArrayList<>();
-
 
         if (val.equals("Profile")) {
             final DatabaseReference db = FirebaseDatabase.getInstance().getReference("Profile");
@@ -64,8 +61,8 @@ public class LOPRecyclerView extends AppCompatActivity {
 
                 }
             });
-        } else if (val.equals("profilemobile")) {
-            final DatabaseReference db = FirebaseDatabase.getInstance().getReference("profilemobile");
+        } else if (val.equals("Profilemobile")) {
+            final DatabaseReference db = FirebaseDatabase.getInstance().getReference("Profilemobile");
 
             db.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
