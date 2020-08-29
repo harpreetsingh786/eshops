@@ -58,22 +58,14 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="112dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="40dp"
-            android:background="#000032"
-            android:text="Laptops"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/rounded_edit_text"
+            android:text="Products"
             android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="119dp"
-            android:layout_height="55dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="40dp"
-            android:background="#000032"
-            android:text="Mobilr Phones"
-            android:textColor="#ffffff" />
 
     </LinearLayout>
 </LinearLayout>

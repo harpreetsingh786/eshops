@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,10 +21,14 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class mobiles extends AppCompatActivity {
@@ -36,7 +41,15 @@ public class mobiles extends AppCompatActivity {
     Profilemobile profilemobile;
     StorageReference imagePath;
     long maxid=0;
+    private static final String NAME_KEY = "Name";
+    private static final String EMAIL_KEY = "Email";
+    private static final String PHONE_KEY = "Phone";
 
+    private FirebaseFirestore dbfirestore;
+/*
+    public mobiles(FirebaseFirestore dbfirestore) {
+        this.dbfirestore = dbfirestore;
+    }*/
 
 
     @Override
@@ -44,16 +57,30 @@ public class mobiles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobiles);
 
-        mobilename=findViewById(R.id.mobilename);
+        mobilename=findViewById(R.id.mobilename);               // calling id of mobile name
         mobiledescription=findViewById(R.id.imagedescription);
         price=findViewById(R.id.imgprice);
         imageButton=findViewById(R.id.imageButton);
-        database=FirebaseDatabase.getInstance();
-        ref=database.getReference("Profilemobile");
-        insert=findViewById(R.id.btnInsert);
-        profilemobile=new Profilemobile();
+     //   database=FirebaseDatabase.getInstance();                    // calling instance in database
 
-        ref.addValueEventListener(new ValueEventListener() {
+        // [END get_firestore_instance]
+
+        // [START set_firestore_settings]
+
+        dbfirestore=FirebaseFirestore.getInstance();
+       /* dbfirestore.setLoggingEnabled(true);
+        FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
+                .setPersistenceEnabled(true)
+                .build();
+        dbfirestore.setFirestoreSettings(settings);
+*/
+     //   ref=database.getReference("Profilemobile");
+        insert=findViewById(R.id.btnInsert);
+
+        profilemobile=new Profilemobile();
+        // make an entry in database to show new mobile phones available
+
+     /*   ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists())
@@ -64,12 +91,33 @@ public class mobiles extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
-        insert.setOnClickListener(new View.OnClickListener() {
+        });*/
+
+        // button to save new product added to list
+       insert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getValues();
-                ref.child(String.valueOf(maxid+1)).setValue(profilemobile);
+
+
+              getValues();
+
+                dbfirestore.collection("profilemobile").document("mobiles")
+                        .set(profilemobile)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+
+                                Log.d("TAG", "DocumentSnapshot successfully written!");
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.w("TAG", "Error writing document", e);
+                            }
+                        });
+                dbfirestore.collection("profile").document("mobiles").set(profilemobile);
+            //    ref.child(String.valueOf(maxid+1)).setValue(profilemobile);
 
                 Toast.makeText(mobiles.this,"Data Inserted..",Toast.LENGTH_SHORT).show();
             }
@@ -82,8 +130,9 @@ public class mobiles extends AppCompatActivity {
         profilemobile.setName(mobilename.getText().toString());
         profilemobile.setDescription(mobiledescription.getText().toString());
         profilemobile.setPrice(price.getText().toString());
-        profilemobile.setImageAdress(imagePath.toString());
+   //     profilemobile.setImageAdress(imagePath.toString());
     }
+
 
     public void btnImage(View view)
     {

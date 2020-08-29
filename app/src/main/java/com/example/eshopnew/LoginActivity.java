@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button joinBtn;
     TextView registrationTextVIEW,admin;
     private FirebaseAuth firebaseAuth;
-
+    FirebaseFirestore db;
 
 
     @Override
@@ -32,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
+        db = FirebaseFirestore.getInstance();
 
         emailAddEd=(EditText) findViewById(R.id.LogEmaileditText);
         passEd=(EditText) findViewById(R.id.LogpasswordeditText);

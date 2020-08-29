@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private Button joinBtn;
 
     private FirebaseAuth firebaseAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
 
 
@@ -45,8 +47,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
         confirmpassword=(EditText)findViewById(R.id.confirmpasswordeditText);
 
-
-
         firebaseAuth= FirebaseAuth.getInstance();
 
         joinBtn.setOnClickListener(new View.OnClickListener() {
@@ -55,11 +55,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 String firstname = fNameEd.getText().toString().trim();
                 String lastname = lNameEd.getText().toString().trim();
-
                 String email = emailAddEd.getText().toString().trim();
-
                 String password = passEd.getText().toString().trim();
-
                 String confrmPasword= confirmpassword.getText().toString().trim();
 
 
@@ -126,13 +123,11 @@ public class RegistrationActivity extends AppCompatActivity {
                                         Toast.makeText(RegistrationActivity.this,"Authentication Failed", Toast.LENGTH_SHORT).show();
 
                                     }
-
-                                    // ...
                                 }
                             });
                 }
                 else {
-                    Toast.makeText(RegistrationActivity.this,"pasword dose not match", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistrationActivity.this,"Password doesn't match", Toast.LENGTH_SHORT).show();
                 }
 
 
