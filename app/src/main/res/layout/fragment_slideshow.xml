@@ -45,73 +45,20 @@
 
 
             <EditText
-                android:id="@+id/firsteditText"
-                android:layout_width="255dp"
-                android:layout_height="61dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="25dp"
-                android:drawablePadding="10dp"
-                android:hint="First Name"
-                android:paddingLeft="10dp"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-
-            <EditText
-                android:id="@+id/lasteditText"
-                android:layout_width="255dp"
-                android:layout_height="61dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="25dp"
-                android:drawablePadding="10dp"
-                android:hint="Last Name"
-                android:paddingLeft="10dp"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-            <EditText
                 android:id="@+id/EmaileditText"
                 android:layout_width="255dp"
                 android:layout_height="61dp"
                 android:layout_marginLeft="95dp"
                 android:layout_marginTop="25dp"
-                android:hint=" Email Id"
                 android:inputType="textEmailAddress"
-                android:textColor="#000"
-                android:textColorHint="#000" />
-
-            <EditText
-
-                android:id="@+id/confirmpasswordeditText"
-                android:layout_width="255dp"
-                android:layout_height="61dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="25dp"
-                android:hint="Write a Message:"
-                android:inputType="textPassword"
+                android:text="Phone no. 5148066009"
                 android:textColor="#000"
                 android:textColorHint="#000" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/joinbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="65dp"
-                    android:layout_marginTop="20dp"
-
-                    android:layout_marginRight="65dp"
-                    android:background="#000032"
-                    android:drawablePadding="10dp"
-                    android:text="Submit"
-                    android:textColor="#ffffff" />
-
-
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
